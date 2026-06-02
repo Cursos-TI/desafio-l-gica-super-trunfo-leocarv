@@ -108,69 +108,94 @@ int main() {
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-    printf("Carta 1 - %s: %lu\n", cidade1, populacao1);
-    printf("Carta 2 - %s: %lu\n", cidade2, populacao2);
-    if (populacao1 > populacao2) {
-        printf("Cidade 1 tem maior população.\n");
-    } else {
-        printf("Cidade 2 tem maior população.\n");
+    int opcao;
+
+    printf("Menu: Escolha o atributo:\n");
+    printf("1. Populaçãoo\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Pontos turísticosIB\n");
+    printf("5. Densidade Populacional\n");
+    printf("6. PIB percapita\n");
+    printf("7. Super Poder\n");
+    printf("Escolha uma opção: \n");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Carta 1 - %s: %lu\n", cidade1, populacao1);
+            printf("Carta 2 - %s: %lu\n", cidade2, populacao2);
+            if (populacao1 > populacao2) {
+                printf("Cidade 1 tem maior população.\n");
+            } else {
+                printf("Cidade 2 tem maior população.\n");
+            }
+            printf("\n\n");
+            break;
+        
+        case 2:
+            printf("Carta 1 - %s: %f\n", cidade1, area1);
+            printf("Carta 2 - %s: %f\n", cidade2, area2);
+            if (area1 > area2) {
+                printf("Cidade 1 tem maior área.\n");
+            } else {
+                printf("Cidade 2 tem maior área.\n");
+            }
+            printf("\n\n");
+            break;
+        case 3:
+            printf("Carta 1 - %s: %f\n", cidade1, pib1);
+            printf("Carta 2 - %s: %f\n", cidade2, pib2);
+            if (pib1 > pib2) {
+                printf("Cidade 1 tem maior PIB.\n");
+            } else {
+                printf("Cidade 2 tem maior PIB.\n");
+            }
+            printf("\n\n");
+            break;
+        case 4:
+            printf("Carta 1 - %s: %d\n", cidade1, pontos_turisticos1);
+            printf("Carta 2 - %s: %d\n", cidade2, pontos_turisticos2);
+            if (pontos_turisticos1 > pontos_turisticos2) {
+                printf("Cidade 1 tem mais pontos turísticos.\n");
+            } else {
+                printf("Cidade 2 tem mais pontos turísticos.\n");
+            }
+            printf("\n\n");
+            break;
+        case 5:
+            printf("Carta 1 - %s: %f\n", cidade1, densidade_populacional1);
+            printf("Carta 2 - %s: %f\n", cidade2, densidade_populacional2);
+            if (densidade_populacional1 > densidade_populacional2) {
+                printf("Cidade 1 tem mais densidade populacional.\n");
+            } else {
+                printf("Cidade 2 tem mais densidade populacional.\n");
+            }
+            printf("\n\n");
+            break;
+        case 6:
+            printf("Carta 1 - %s: %f\n", cidade1, pib_percapita1);
+            printf("Carta 2 - %s: %f\n", cidade2, pib_percapita2);
+            if (pib_percapita1 > pib_percapita2) {
+                printf("Cidade 1 tem maior PIB percapita.\n");
+            } else {
+                printf("Cidade 2 tem menor PIB percapita.\n");
+            }
+            printf("\n\n");
+            break;
+        case 7:
+            printf("Carta 1 - %s: %f\n", cidade1, superPoder1);
+            printf("Carta 2 - %s: %f\n", cidade2, superPoder2);
+            if (superPoder1 > superPoder2) {
+                printf("Cidade 1 tem mais SUPER PODER.\n");
+            } else {
+                printf("Cidade 2 tem mais SUPER PODER.\n");
+            }
+            printf("\n\n");
+            break;
+        default:
+            printf("Opção inválida. Tente novamente.\n");
     }
-    printf("\n\n");
-    // ===================================================
-    printf("Carta 1 - %s: %f\n", cidade1, area1);
-    printf("Carta 2 - %s: %f\n", cidade2, area2);
-    if (area1 > area2) {
-        printf("Cidade 1 tem maior área.\n");
-    } else {
-        printf("Cidade 2 tem maior área.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
-    printf("Carta 1 - %s: %f\n", cidade1, pib1);
-    printf("Carta 2 - %s: %f\n", cidade2, pib2);
-    if (pib1 > pib2) {
-        printf("Cidade 1 tem maior PIB.\n");
-    } else {
-        printf("Cidade 2 tem maior PIB.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
-    printf("Carta 1 - %s: %d\n", cidade1, pontos_turisticos1);
-    printf("Carta 2 - %s: %d\n", cidade2, pontos_turisticos2);
-    if (pontos_turisticos1 > pontos_turisticos2) {
-        printf("Cidade 1 tem mais pontos turísticos.\n");
-    } else {
-        printf("Cidade 2 tem mais pontos turísticos.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
-    printf("Carta 1 - %s: %f\n", cidade1, densidade_populacional1);
-    printf("Carta 2 - %s: %f\n", cidade2, densidade_populacional2);
-    if (densidade_populacional1 > densidade_populacional2) {
-        printf("Cidade 1 tem mais densidade populacional.\n");
-    } else {
-        printf("Cidade 2 tem mais densidade populacional.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
-    printf("Carta 1 - %s: %f\n", cidade1, pib_percapita1);
-    printf("Carta 2 - %s: %f\n", cidade2, pib_percapita2);
-    if (pib_percapita1 > pib_percapita2) {
-        printf("Cidade 1 tem maior PIB percapita.\n");
-    } else {
-        printf("Cidade 2 tem menor PIB percapita.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
-    printf("Carta 1 - %s: %f\n", cidade1, superPoder1);
-    printf("Carta 2 - %s: %f\n", cidade2, superPoder2);
-    if (superPoder1 > superPoder2) {
-        printf("Cidade 1 tem mais SUPER PODER.\n");
-    } else {
-        printf("Cidade 2 tem mais SUPER PODER.\n");
-    }
-    printf("\n\n");
-    // ===================================================;
 
     return 0;
 }
