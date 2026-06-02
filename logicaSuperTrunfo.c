@@ -166,10 +166,10 @@ int main() {
         case 5:
             printf("Carta 1 - %s: %f\n", cidade1, densidade_populacional1);
             printf("Carta 2 - %s: %f\n", cidade2, densidade_populacional2);
-            if (densidade_populacional1 > densidade_populacional2) {
-                printf("Cidade 1 tem mais densidade populacional.\n");
+            if (densidade_populacional1 < densidade_populacional2) {
+                printf("Cidade 1 tem menos densidade populacional.\n");
             } else {
-                printf("Cidade 2 tem mais densidade populacional.\n");
+                printf("Cidade 2 tem menos densidade populacional.\n");
             }
             printf("\n\n");
             break;
